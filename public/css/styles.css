@@ -70,6 +70,8 @@ header nav a {
 header nav a:hover {
     text-decoration: underline;
     text-decoration-color: #cc7a00;
+    text-underline-offset: 5px;
+    transition: .5s;
 }
 
 section.presentation {
@@ -114,7 +116,7 @@ section#about div.text {
 }
 section#about div.img {
     text-align: center;
-    padding: 0 2rem;
+    padding: 0 0 0 2rem;
 }
 section#about img{
     border-radius: 10% ;
@@ -223,58 +225,171 @@ section#projects div.projects article:hover .front{
 section#projects div.projects article:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
-/*
-section#projects article.project-card {
-    width: 30%;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1rem;
-    text-align: center;
-    background-color: #996633;
-    border: 2px solid black;
-    border-radius: 5%;
 
-}
-
-section#projects .project-card .project-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-section#projects .project-card .project-description {
-    font-size: 1.2rem;
-}
-
-section#projects .project-card .project-languages {
+section#skills .skills {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1rem;
-    background-color: #333;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    margin-right: 1rem;
-    font-size: 1.2rem;
-}
-
-
-section#skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 3rem 0;
+    justify-content: flex-start;
+    padding:  0;
+    margin: 0
   }
   
   section#skills .skill {
-    width: 20%;
-    height: 150px;
-    margin: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem
-  }   */
+  }   
+
+  section#skills .skill img {
+    width: 50px;
+    height: 50px;
+  }
+  section#skills .skill span{
+    font-weight: bold;
+  }
+
+  section#education div.education{
+    padding: 0
+  }
+  div.education h3{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-underline-offset: 5px ;
+    text-decoration-color: #cc7a00;
+  }
+
+section#contact .form{
+    background-color: white;
+    width: 90%;
+    margin:auto;
+    max-width: 500px;
+    border-radius: 1em;
+    padding: 1.5em 1.5em;
+    margin-bottom: 2rem;
+    box-shadow: 0px 5px 5px #cc7a00;
+}
+section#contact .form-container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+    
+}
+section#contact .form-container h3{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: .4em;
+}
+
+  section#contact .form-input{
+    font-family: inherit;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #f2f2f2;
+    border-radius: 0.2em;
+  }
+  section#contact .form-input:focus{
+    border: 1px solid #cc7a00
+  }
+  section#contact .form-message{
+    resize: none;
+  }
+  section#contact .form-submit{
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    border: none;
+    font-weight: bold;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+  }
+  section#contact .form-submit:hover{
+    box-shadow: 0 5px 5px #3c3b3b;
+    transition: .5s;
+  }
+  .follow-icons{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px 0px 10px;
+}
+.follow-icons a{
+    text-decoration: none;
+    color: black
+}
+#logo-git{
+    font-size: 2.5rem;
+    width: 30%;
+    transition: all 0.4s
+}
+#logo-git:hover{
+    color: rgb(69, 143, 212);
+    font-size: 3rem;
+}
+#logo-in{
+    font-size: 2.5rem;
+    width: 30%;
+    transition: all 0.4s
+}
+#logo-in:hover{
+    color: blue;
+    font-size: 3rem;
+}
+#logo-wsp{
+    font-size: 2.5rem;
+    width: 30%;
+    transition: all 0.4s
+}
+#logo-wsp:hover{
+    color: rgb(73, 203, 73);
+    font-size: 3rem;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #cc7a00;
+}
+footer .copyright{
+    display: flex;
+    flex-direction: column;
+}
+footer .copyright a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+footer .copyright p{
+    padding: 0;
+    margin: 0
+}
+
+footer ul.nav-list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+}
+footer ul.nav-list li {
+    padding: 0px 10px
+}
+footer nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #cc7a00;
+    text-underline-offset: 5px;
+    transition: .5s;
+}

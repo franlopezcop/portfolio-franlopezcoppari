@@ -40,7 +40,7 @@
             <li class="nav_item"><a href="#about">Sobre Mi</a></li>
             <li><a href="#projects">Proyectos</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Educacion</a></li>
+            <li><a href="#education">Educación</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
         </nav>  
@@ -116,7 +116,7 @@
                 <p>Proyecto que provee endpoints para ser consumidos en la app de React</p>
               </div>
               <div class="project-languages">
-                <p>Node</p>
+                <p>Node |</p>
                 <p>JS</p>
               </div>
               <div class="project-git">
@@ -154,23 +154,79 @@
         </div> 
       </section>
       <section id="skills">
-        <% skills.forEach( skill =>{ %>
-          <article class="skill">
-            <div>
-              <figure class="skill-icon">
-                <img src=<%= skill.img %> alt='<%= skill.name %> logo'>
-              </figure>
-            </div>
-            <div>
-              <span><%= skill.name %> </span>
-            </div>
-          </article>
-        <% }) %> 
+        <h2 class="title">Skills</h2>
+        <div class="skills">
+          <% skills.forEach( skill =>{ %>
+            <article class="skill">
+              <div>
+                <figure class="skill-icon">
+                  <img src=<%= skill.img %> alt='<%= skill.name %> logo'>
+                </figure>
+              </div>
+              <div>
+                <span><%= skill.name %> </span>
+              </div>
+            </article>
+          <% }) %> 
+        </div>
+      </section>
+      <section id="education">
+        <h2 class="title">Educación</h2>
+        <div class="education">
+          <h3> Desarrollo Web Full Stack </h3>
+          <p><b>¿Dónde?</b> Digital House</p>
+          <p><b>¿Cuándo?</b> Mayo 2022 - Noviembre 2022</p>
+          <p>Curso completo de desarrollo web Full Stack dictado por la academia virtual Digital House. El mismo incluye una proyecto integrador grupal, donde se crea un e-commerce de 0 a 100, trabajando con SCRUM, GitHub, Trello y todas las tecnologías aprendidas en el curso.</p>
+  
+          <h3> Ingeniería Industrial </h3>
+          <p><b>¿Dónde?</b> Universidad Tecnológica Nacional</p>
+          <p><b>¿Cuándo?</b> Febrero 2017 - Diciembre 2022</p>
+          <p>Grado en Ingeniería Industrial con promedio de 8,80.</p>
+  
+          <h3> Inglés </h3>
+          <p><b>¿Dónde?</b> World Link</p>
+          <p><b>¿Cuándo?</b> Marzo 2006 - Noviembre 2015</p>
+          <p>Nivel avanzado - Competencias profesionales.</p>
+        </div>
+      </section>
+      <section id="contact">
+        <h2 class="title">Contacto</h2>
+        <form class="form" action="https://formspree.io/f/xvonkpev"
+        method="POST">
+          <div class="form-container">
+            <h3>Enviar Email</h3>
+            <input type="text" class="form-input" name='name' placeholder="Nombre:">
+            <input type="email" class="form-input" name="email" placeholder="Tu Email:">
+            <textarea class="form-input form-message" name="message" placeholder="Mensaje:"></textarea>
+            <input type="submit" value="Enviar" class="form-submit">
+          </div>
+        </form>
+        <div class="follow-icons">
+          <a href="https://github.com/franlopezcop" target="_blank"><i class="fa-brands fa-github" id="logo-git"></i></a>
+          <a href="https://www.linkedin.com/in/franciscolopezcoppari" target="_blank"><i class="fa-brands fa-linkedin" id="logo-in"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=543512078672&text=Hola%20Francisco%2C" target="_blank"><i class="fab fa-whatsapp" id="logo-wsp"></i></a>
+      </div>
       </section>
     
     </main>
     <footer>
-    
+        <div class='copyright'>
+          <p><b>@ 2023</b></p>
+          <a href="/">
+            <p>Francisco Lopez Coppari</p>
+          </a>
+        </div>
+      <div class="nav">
+        <nav>
+          <ul class="nav-list">
+            <li class="nav_item"><a href="#about">Sobre Mi</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Educación</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>  
+      </div>
     </footer>
   </body>
 </html>
