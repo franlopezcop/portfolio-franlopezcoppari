@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="db.onlinewebfonts.com/c/207d3f57810bef8d49e2f1b5f1722fb2?family=Purista" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".vscode">
+    <script src="https://kit.fontawesome.com/9c18bcfe28.js" crossorigin="anonymous"></script>
+    <title> <%= title %>   </title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <figure>
+            <img class="avatar" src="/images/avatar.jpg" alt="imagen de avatar">
+          </figure>
+          <div class='name'>
+            <p>Francisco</p>
+            <p>Lopez Coppari</p>
+          </div>
+        </a>
+      </div>
+      <div class="nav">
+        <nav>
+          <ul class="nav-list">
+            <li class="nav_item"><a href="#about">Sobre Mi</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Educacion</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>  
+      </div>
+    </header>
+    <main>
+      <section class="presentation">
+        <div>
+          <p class="pres1">Hola, mi nombre es</p>
+          <p class="pres2">Francisco Lopez Coppari</p>
+          <p class="pres3">Full Stack Developer</p>
+          <p class="pres4">"Soy responsable, ambicioso, resolutivo y perseverante"</p>
+        </div>
+      </section>
+      <section id="about">
+        <h2 class="title">Sobre Mi</h2>
+        <div class="about">
+          <div class="text">
+            <p>Soy un apasionado por el Desarrollo Web, con la lógica y lo resolutivo de un Ingeniero. Mi objetivo es ser un programador altamente calificado y se que para lograrlo debo estar en constante capacitación.</p>
+            <p>Siempre destaqué por mi gran capacidad para aprender y adaptarme al cambio, y me siento muy comodo trabajando en diferentes equipos bajo diferentes metodologías.</p>
+            <p>Me encuentro en búsqueda de mi primer trabajo como desarrollador, con muchas ganas de aprender y sumar experiencias.</p>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="avatar" src="/images/avatar.jpg" alt="imagen de avatar" width="200px">
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2 class="title">Proyectos</h2>
+        <div class="projects">
+          <article class="project-card">
+            <div class="face front">
+              <img  src="/images/project1.png" alt="proyect 1 image">
+              <div class="project-title">
+                <a href="https://ecommerce-blackfe-francisco-lopez-coppari.onrender.com" target="_blank"><span>Blackfe - E-commerce</span></a>
+              </div>
+            </div>
+            <div class="face back">
+              <img  src="/images/project1-b.png" alt="proyect 1 image">
+              <div class="project-title">
+                <a href="https://ecommerce-blackfe-francisco-lopez-coppari.onrender.com" target="_blank"><span>Blackfe - E-commerce</span></a>
+              </div>
+              <div class="project-desc">
+                <p>Web que simula un e-commerce de mi emprendimiento personal Blackfe, dedicado a la venta de muebles estilo industrial</p>
+              </div>
+              <div class="project-languages">
+                <p>Node |</p>
+                <p>Express |</p>
+                <p>JS |</p>
+                <p>Sequelize</p>
+              </div>
+              <div class="project-git">
+                <a href="https://github.com/franlopezcop/E-commerce_Blackfe" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="face front">
+              <img  src="/images/project2.png" alt="proyect 2 image">
+              <div class="project-title">
+                <a href="https://ecommerce-blackfe-api.onrender.com" target="_blank"><span>Blackfe - API</span></a>
+              </div>
+            </div>
+            <div class="face back">
+              <img  src="/images/project2-b.png" alt="proyect 1 image">
+              <div class="project-title">
+                <a href="https://ecommerce-blackfe-api.onrender.com" target="_blank"><span>Blackfe - API</span></a>
+              </div>
+              <div class="project-desc">
+                <p>Proyecto que provee endpoints para ser consumidos en la app de React</p>
+              </div>
+              <div class="project-languages">
+                <p>Node</p>
+                <p>JS</p>
+              </div>
+              <div class="project-git">
+                <a href="https://github.com/franlopezcop/E-commerce_Blackfe-API" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="face front">
+              <img  src="/images/project3.png" alt="proyect 3 image">
+              <div class="project-title">
+                <a href="https://ecommerce-blackfe-reactdashboard.onrender.com" target="_blank"><span>Blackfe - React Dashboard</span></a>
+              </div>
+            </div>
+            <div class="face back">
+              <img  src="/images/project3-b.png" alt="proyect 1 image">
+              <div class="project-title">
+                <a href="https://ecommerce-blackfe-reactdashboard.onrender.com" target="_blank"><span>Blackfe - React Dashboard</span></a>
+              </div>
+              <div class="project-desc">
+                <p>Web que simula un e-commerce de mi emprendimiento personal Blackfe, dedicado a la venta de muebles estilo industrial</p>
+              </div>
+              <div class="project-languages">
+                <p>Node |</p>
+                <p>React</p>
+                <p>JS |</p>
+                <p>API</p>
+              </div>
+              <div class="project-git">
+                <a href="https://github.com/franlopezcop/E-commerce_Blackfe-React"><i class="fa-brands fa-github" target="_blank"></i></a>
+              </div>
+            </div>
+          </article>
+        </div> 
+      </section>
+      <section id="skills">
+        <% skills.forEach( skill =>{ %>
+          <article class="skill">
+            <div>
+              <figure class="skill-icon">
+                <img src=<%= skill.img %> alt='<%= skill.name %> logo'>
+              </figure>
+            </div>
+            <div>
+              <span><%= skill.name %> </span>
+            </div>
+          </article>
+        <% }) %> 
+      </section>
+    
+    </main>
+    <footer>
+    
+    </footer>
+  </body>
+</html>
