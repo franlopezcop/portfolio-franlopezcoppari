@@ -23,29 +23,41 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="/">
-          <figure>
-            <img class="avatar" src="/images/avatar.jpg" alt="imagen de avatar">
-          </figure>
-          <div class='name'>
-            <p>Francisco</p>
-            <p>Lopez Coppari</p>
-          </div>
-        </a>
+      <div class="header">
+
+        <div class="logo">
+          <a href="/">
+            <figure>
+              <img class="avatar" src="/images/avatar.jpg" alt="imagen de avatar">
+            </figure>
+            <div class='name'>
+              <p>Francisco</p>
+              <p>Lopez Coppari</p>
+            </div>
+          </a>
+        </div>
+        <div class="nav">
+          <nav>
+            <!-- <label for="check" class="checkbtn">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="check"> -->
+            <div class="toggle-menu" id="toggle-menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-list" id="nav-list">
+              <li class="nav_item"><a href="#about">Sobre Mi</a></li>
+              <li class="nav_item"><a href="#projects">Proyectos</a></li>
+              <li class="nav_item"><a href="#skills">Skills</a></li>
+              <li class="nav_item"><a href="#education">Educación</a></li>
+              <li class="nav_item"><a href="#contact">Contacto</a></li>
+            </ul>
+          </nav>  
+        </div>
       </div>
-      <div class="nav">
-        <nav>
-          <ul class="nav-list">
-            <li class="nav_item"><a href="#about">Sobre Mi</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Educación</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </nav>  
-      </div>
+
     </header>
+    
     <main>
       <section class="presentation">
         <div>
@@ -228,5 +240,6 @@
         </nav>  
       </div>
     </footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
