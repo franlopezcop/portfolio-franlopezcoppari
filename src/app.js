@@ -1,4 +1,5 @@
 const express = require('express')
+// const serverless = require('serverless-http')
 const app = express()
 const path = require('path')
 const port = process.env.PORT || 3000;
@@ -10,6 +11,9 @@ app.set('view engine', 'ejs')
 
 const mainRouter = require('./routes/mainRouter.js')
 app.use('/', mainRouter)
+// app.use('/.netlify/functions/api', mainRouter)
+
+// module.exports.handler = serverless(app)
 // app.get("/",(req,res) => res.sendFile(path.join(viewsPath,"./home.html")))
 
 // app.get("/",(req,res) => res.sendFile(path.join(viewsPath,"./home.html")))
@@ -18,3 +22,4 @@ app.use('/', mainRouter)
 app.listen(port, () => {
     console.log("Servidor corriendo en el puerto " + port);
 })
+
