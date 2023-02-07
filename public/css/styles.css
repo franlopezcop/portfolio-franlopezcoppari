@@ -198,6 +198,7 @@ section#projects article.project-card{
     height: 100%;
     object-fit: cover;
 }
+
 .front .project-title span {
     position: absolute;
     top: 0;
@@ -225,6 +226,7 @@ section#projects article.project-card{
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    filter: brightness(20%)
 }
 .back .project-title{
     width: 100%;

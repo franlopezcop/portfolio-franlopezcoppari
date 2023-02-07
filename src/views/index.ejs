@@ -85,84 +85,34 @@
       <section id="projects">
         <h2 class="title">Proyectos</h2>
         <div class="projects">
-          <article class="project-card">
-            <div class="face front">
-              <img  src="/images/project1.png" alt="proyect 1 image">
-              <div class="project-title">
-                <a href="https://ecommerce-blackfe-francisco-lopez-coppari.onrender.com" target="_blank"><span>Blackfe - E-commerce</span></a>
-              </div>
-            </div>
-            <div class="face back">
-              <img  src="/images/project1-b.png" alt="proyect 1 image">
-              <div class="project-title">
-                <a href="https://ecommerce-blackfe-francisco-lopez-coppari.onrender.com" target="_blank"><span>Blackfe - E-commerce</span></a>
-              </div>
-              <div class="project-desc">
-                <p>Web que simula un e-commerce de mi emprendimiento personal Blackfe, dedicado a la venta de muebles estilo industrial</p>
-              </div>
-              <div class="project-languages">
-                <p>Node |</p>
-                <p>Express |</p>
-                <p>JS |</p>
-                <p>Sequelize</p>
-              </div>
-              <div class="project-git">
-                <a href="https://github.com/franlopezcop/E-commerce_Blackfe" target="_blank"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </article>
 
-          <article class="project-card">
-            <div class="face front">
-              <img  src="/images/project2.png" alt="proyect 2 image">
-              <div class="project-title">
-                <a href="https://ecommerce-blackfe-api.onrender.com" target="_blank"><span>Blackfe - API</span></a>
+          <% projects.forEach( project =>{ %>          
+            <article class="project-card">
+              <div class="face front">
+                <img  src=<%= project.img %>  alt="<%= project.title %>  image">
+                <div class="project-title">
+                  <a href=<%= project.pLink %> target="_blank"><span><%= project.title %></span></a>
+                </div>
               </div>
-            </div>
-            <div class="face back">
-              <img  src="/images/project2-b.png" alt="proyect 1 image">
-              <div class="project-title">
-                <a href="https://ecommerce-blackfe-api.onrender.com" target="_blank"><span>Blackfe - API</span></a>
+              <div class="face back">
+                <img  src=<%= project.img %> alt="<%= project.title %> image">
+                <div class="project-title">
+                  <a href=<%= project.pLink %> target="_blank"><span><%= project.title %></span></a>
+                </div>
+                <div class="project-desc">
+                  <p><%= project.desc %></p>
+                </div>
+                <div class="project-languages">
+                  <% project.languages.forEach( lang =>{ %> 
+                    <p><%= lang %> |</p>
+                  <% }) %>
+                </div>
+                <div class="project-git">
+                  <a href=<%= project.gLink %> target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
               </div>
-              <div class="project-desc">
-                <p>Proyecto que provee endpoints para ser consumidos en la app de React</p>
-              </div>
-              <div class="project-languages">
-                <p>Node |</p>
-                <p>JS</p>
-              </div>
-              <div class="project-git">
-                <a href="https://github.com/franlopezcop/E-commerce_Blackfe-API" target="_blank"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="face front">
-              <img  src="/images/project3.png" alt="proyect 3 image">
-              <div class="project-title">
-                <a href="https://ecommerce-blackfe-reactdashboard.onrender.com" target="_blank"><span>Blackfe - React Dashboard</span></a>
-              </div>
-            </div>
-            <div class="face back">
-              <img  src="/images/project3-b.png" alt="proyect 1 image">
-              <div class="project-title">
-                <a href="https://ecommerce-blackfe-reactdashboard.onrender.com" target="_blank"><span>Blackfe - React Dashboard</span></a>
-              </div>
-              <div class="project-desc">
-                <p>Web que simula un e-commerce de mi emprendimiento personal Blackfe, dedicado a la venta de muebles estilo industrial</p>
-              </div>
-              <div class="project-languages">
-                <p>Node |</p>
-                <p>React</p>
-                <p>JS |</p>
-                <p>API</p>
-              </div>
-              <div class="project-git">
-                <a href="https://github.com/franlopezcop/E-commerce_Blackfe-React"><i class="fa-brands fa-github" target="_blank"></i></a>
-              </div>
-            </div>
-          </article>
+            </article>
+          <% }) %>
         </div> 
       </section>
       <section id="skills">

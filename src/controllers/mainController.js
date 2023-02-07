@@ -16,9 +16,39 @@ const mainController = {
             {name: 'Postman', img:'/images/postman.svg'},
             {name: 'MVC', img:'/images/architecture.png'},
         ]
+
+        const projects =[
+            {title: "Blackfe - E-commerce", 
+            img:'/images/project1.png',  
+            pLink:'https://ecommerce-blackfe-francisco-lopez-coppari.onrender.com', 
+            gLink:'https://github.com/franlopezcop/E-commerce_Blackfe', 
+            desc:'Web que simula un e-commerce de mi emprendimiento personal Blackfe, dedicado a la venta de muebles estilo industrial', 
+            languages:['Node', 'Express', 'Javascript', 'Sequelize', 'EJS', 'CSS']},
+
+            {title: "Blackfe - API", 
+            img:'/images/project2.png', 
+            pLink:'https://ecommerce-blackfe-api.onrender.com', 
+            gLink:'https://github.com/franlopezcop/E-commerce_Blackfe-API', 
+            desc:'Proyecto que provee endpoints para ser consumidos en la app de React', 
+            languages:['Node', 'Express', 'Javascript']},
+
+            {title: "Blackfe - React Dashboard", 
+            img:'/images/project3.png', 
+            pLink:'https://ecommerce-blackfe-reactdashboard.onrender.com', 
+            gLink:'https://github.com/franlopezcop/E-commerce_Blackfe-React', 
+            desc:'Dashboard para ver estadisticas de un e-commerce', 
+            languages:['Node', 'React', 'Javascript', 'API']},
+
+            {title: "Pimienta & Sal",
+            img:'/images/project4.jpg',
+            pLink:'https://pimienta-y-sal.onrender.com/', 
+            gLink:'https://github.com/franlopezcop/pimienta-sal', 
+            desc:'Fine Dinning Menu con base de datos harcodeada', 
+            languages:['Node', 'EJS', 'Javascript', 'CSS']}
+        ]
         
         
-        res.render('index',{title:'Portfolio Francisco Lopez Coppari', skills})
+        res.render('index',{title:'Portfolio Francisco Lopez Coppari', skills, projects})
     }
 }
 module.exports = mainController
