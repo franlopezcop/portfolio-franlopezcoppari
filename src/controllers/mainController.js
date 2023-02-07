@@ -18,7 +18,7 @@ const mainController = {
         ]
         
         
-        res.render('home',{title:'Portfolio Francisco Lopez Coppari', skills})
+        res.render('index',{title:'Portfolio Francisco Lopez Coppari', skills})
     }
 }
 module.exports = mainController

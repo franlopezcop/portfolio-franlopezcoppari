@@ -12,7 +12,7 @@ const mainRouter = require('./routes/mainRouter.js')
 app.use('/', mainRouter)
 // app.get("/",(req,res) => res.sendFile(path.join(viewsPath,"./home.html")))
 
-app.get("/",(req,res) => res.sendFile(path.join(viewsPath,"./home.html")))
+// app.get("/",(req,res) => res.sendFile(path.join(viewsPath,"./home.html")))
 
 
 app.listen(port, () => {
