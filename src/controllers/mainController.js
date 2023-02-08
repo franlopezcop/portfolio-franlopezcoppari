@@ -23,14 +23,14 @@ const mainController = {
             pLink:'https://ecommerce-blackfe-francisco-lopez-coppari.onrender.com', 
             gLink:'https://github.com/franlopezcop/E-commerce_Blackfe', 
             desc:'Web que simula un e-commerce de mi emprendimiento personal Blackfe, dedicado a la venta de muebles estilo industrial', 
-            languages:['Node', 'Express', 'Javascript', 'Sequelize', 'EJS', 'CSS']},
+            languages:['Node', 'Express', 'Javascript', 'Sequelize', 'EJS', 'MySQL']},
 
             {title: "Blackfe - API", 
             img:'/images/project2.png', 
             pLink:'https://ecommerce-blackfe-api.onrender.com', 
             gLink:'https://github.com/franlopezcop/E-commerce_Blackfe-API', 
             desc:'Proyecto que provee endpoints para ser consumidos en la app de React', 
-            languages:['Node', 'Express', 'Javascript']},
+            languages:['Node', 'Express', 'Javascript', 'Postman']},
 
             {title: "Blackfe - React Dashboard", 
             img:'/images/project3.png', 
@@ -44,7 +44,14 @@ const mainController = {
             pLink:'https://pimienta-y-sal.onrender.com/', 
             gLink:'https://github.com/franlopezcop/pimienta-sal', 
             desc:'Fine Dinning Menu con base de datos harcodeada', 
-            languages:['Node', 'EJS', 'Javascript', 'CSS']}
+            languages:['Node', 'EJS', 'Javascript', 'CSS']},
+
+            {title: "Mercado Liebre",
+            img:'/images/project5.jpg',
+            pLink:'https://mercado-liebre-xmz5.onrender.com', 
+            gLink:'https://github.com/franlopezcop/mercado-liebre-LopezCoppari', 
+            desc:'Projecto para practicar front-end y CRUD en base de datos', 
+            languages:['Node', 'Boostrap', 'Javascript', 'CSS']}
         ]
         
         

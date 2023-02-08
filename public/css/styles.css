@@ -246,22 +246,23 @@ section#projects article.project-card{
     text-decoration: none;
 }
 .back .project-desc p{
-    padding: 15px;
+    padding: 5px 15px;
 }
 .back .project-languages{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 5px;
     padding: 0 10px;
 }
 .back .project-languages p{
-    margin: 0
+    margin: 0;
+    font-size: 0.8rem;
 }
 .back .project-git i{
     font-size: 2rem;
     color: #f2f2f2;
-    padding: 15px;
+    padding: 5px 15px 15px 15px;
 }
 .back .project-git a{
     text-decoration:none ;
@@ -308,7 +309,8 @@ section#skills .skills {
     text-decoration-color: #cc7a00;
   }
   div.education p{
-    padding: .3rem 0
+    padding: .3rem 0;
+    text-align: justify;
   }
 section#contact h2{
     padding-bottom: 2rem;
