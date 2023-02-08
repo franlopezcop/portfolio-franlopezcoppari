@@ -36,14 +36,14 @@ const mainController = {
             img:'/images/project3.png', 
             pLink:'https://ecommerce-blackfe-reactdashboard.onrender.com', 
             gLink:'https://github.com/franlopezcop/E-commerce_Blackfe-React', 
-            desc:'Dashboard para ver estadisticas de un e-commerce', 
+            desc:'Dashboard para ver estadísticas de mi e-commerce', 
             languages:['Node', 'React', 'Javascript', 'API']},
 
             {title: "Pimienta & Sal",
             img:'/images/project4.jpg',
             pLink:'https://pimienta-y-sal.onrender.com/', 
             gLink:'https://github.com/franlopezcop/pimienta-sal', 
-            desc:'Fine Dinning Menu con base de datos harcodeada', 
+            desc:'Fine Dining Menu con base de datos harcodeada', 
             languages:['Node', 'EJS', 'Javascript', 'CSS']},
 
             {title: "Mercado Liebre",
